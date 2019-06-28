@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп «Бородинский»</title>
+</head>
+<body>
+	<header class="page-header">
+		<a href="" class="page-header__logo">
+			<img src="page-header__logo-image" src="" alt="Барбершоп «Бородинский»">
+		</a>
+		<nav class="main-nav">
+			<button class="main-nav_toogle" type="button">Открыть меню</button>
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item">
+					<a href="">Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a href="">Наши работы</a>
+				</li>
+				<li class="site-list__item site-list__item--active">
+					<a href="">Записаться</a>
+				</li>
+				<li class="site-list__item">
+					<a href="">Контакты</a>
+				</li>
+			</ul>
+
+			<ul class="main-nav__list user-list">
+				<li class="user-list__item">
+					<a href="" class="user-list__login">Войти</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="page-main">
+		<section class="entry">
+			<h1 class="entry__headline">Запись на стрижку</h1>
+			<a href="" class="entry__link button">На главную</a>
+			<form class="entry__form">
+				<input placeholder="Фамилия" type="text" name="surname" required>
+
+				<input placeholder="Имя" type="text" name="name" required>
+
+				<input placeholder="Отчество" type="text" name="middle name">
+				<br>
+				<input placeholder="Контактный телефон" type="tel" name="tele">
+				<br>
+				<input placeholder="Контактный e-mail" type="email" name="e-mail">
+				<br>
+				<textarea placeholder="Доп. информация для мастера"></textarea>
+			
+
+				<h2 class="entry__title">Выберите модель бороды:</h2>
+				<ul class="entry__list entry__list--beard">
+					<li class="entry__item entry__item--admiral">
+						<input type="radio" name="admiral" checked>Адмирал
+					</li>
+
+					<li class="entry__item entry__item--lumberjack">
+						<input type="radio" name="lumberjack">Лесоруб
+					</li>
+
+					<li class="entry__item entry__item--polar-explorer">
+						<input type="radio" name="polar-explorer">Полярник
+					</li>
+
+					<li class="entry__item entry__item--boyarin">
+						<input type="radio" name="boyarin">Боярин
+					</li>
+
+					<li class="entry__item entry__item--sage">
+						<input type="radio" name="sage">Мудрец
+					</li>
+				</ul>
+
+				<h2 class="entry__title">Дополнительные услуги:</h2>
+				<ul class="entry__list entry__list--services">
+					<li class="entry__item entry__item--admiral">
+						<input type="checkbox" checked>Подкрасить бороду
+					</li>
+
+					<li class="entry__item">
+						<input type="checkbox" checked>Накрутить усы
+					</li>
+
+					<li class="entry__item">
+						<input type="checkbox">Причесать бороду
+					</li>
+
+					<li class="entry__item">
+						<input type="checkbox">Подровнять виски
+					</li>
+
+					<li class="entry__item">
+						<input type="checkbox">Убрать седину
+					</li>
+
+					<li class="entry__item">
+						<input type="checkbox">Отполировать лысину
+					</li>
+				</ul>
+
+				<input type="submit" value="Отправить заявку">
+			</form>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__contacts contacts">
+				<b class="contacts__title">
+					Барбершоп «Бородинский»
+				</b>
+				<p class="contacts__text">
+					г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+					<a href="tel:+79999999999" class="contacts__phone">
+						<span class="contacts__phone--mobile">Тел:</span>+7 (999) 999-99-99
+					</a>
+				</p>
+			</div>
+
+			<div class="page-footer__social social">
+				<b class="social__title">Давайте дружить!</b>
+				<ul class="social__list">
+					<li class="social__item social__link__vk">
+						<a href="" class="social__link">Мы в Вконтакте</a>
+					</li>
+
+					<li class="social__item social__link__fb">
+						<a href="" class="social__link">Мы в Фейсбук</a>
+					</li>
+
+					<li class="social__item social__link__inst">
+						<a href="" class="social__link">Мы в Инстаграм</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page-footer__copyright copyright">
+				<b class="copyright__title">Разработано:</b>
+				<a href="" class="copyright__link button">HTML Academy</a>
+				<b class="copyright__title">Сверстал:</b>
+				<a href="" class="copyright__link button">Абдрашитов Руслан</a>
+			</div>
+		</div>
+	</footer>	
+</body>
+</html>
