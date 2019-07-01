@@ -1,0 +1,34 @@
+.our-works{
+	width: 280px;
+	margin: 0 auto;
+}
+
+.our-works__list{
+	.reset-list();
+}
+
+@media (min-width: @tablet-width) {
+	.our-works{
+		width: 640px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.our-works{
+		width: 960px;
+	}
+
+	.our-works__list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.our-works__item{
+		width: 295px;
+	}
+
+	.our-works__item--the_best{
+		width: 960px;
+	}
+}

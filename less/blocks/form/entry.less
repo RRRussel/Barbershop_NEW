@@ -1,0 +1,122 @@
+.entry{
+	width: 280px;
+	margin: 0 auto;
+}
+
+.entry__form{
+	margin: 0 auto;
+}
+
+.entry__form input[type="text"]{
+	margin-bottom: 5px;
+}
+
+.entry__form input[name="middlename"]{
+	margin-bottom: 30px;
+}
+
+.entry__form input[type="tel"]{
+	margin-bottom: 5px;
+}
+
+.entry__form input[name="e-mail"]{
+	margin-bottom: 30px;
+}
+
+.entry__list{
+	.reset-list();
+}
+
+.entry__list--beard{
+	display: flex;
+	flex-wrap: wrap;
+
+	.entry__item{
+	margin-right: 25px;
+	}
+}
+
+.entry__item input[type="radio"] {
+	display: flex;
+
+	margin: 0 auto;
+}
+
+.entry__list--services{
+	.entry__item{
+		margin-bottom: 20px;
+	}
+
+	.entry__item:last-child{
+		margin-bottom: 0px;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.entry{
+		width: 640px;
+	}
+
+	.entry__form input[type="text"]{
+		margin: 0;
+		padding: 0;
+		margin-bottom: 35px;
+		width: 206px;
+	}
+
+	.entry__form input[type="tel"],
+	.entry__form input[name="e-mail"],
+	textarea{
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	textarea{
+		margin-bottom: 0px;
+	}
+
+	.entry__list--beard{
+		justify-content: space-around;
+	}
+
+	.entry__list--services{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+
+		max-height: 155px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.entry{
+		width: 960px;
+	}
+
+	.entry__form input[type="text"]{
+		margin: 0;
+		padding: 0;
+		margin-bottom: 35px;
+		width: 295px;
+	}
+
+	.entry__form input[type="text"]:last-child{
+		margin-right: 0px;
+	}
+
+	.entry__wrapper--form{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.entry__form input[type="tel"],
+	.entry__form input[name="e-mail"]{
+		width: 48%;
+		margin-bottom: 35px;
+	}
+
+	.entry__list--services{
+		max-height: 105px;
+		justify-content: space-between;
+	}
+}

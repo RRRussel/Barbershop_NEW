@@ -3,34 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Барбершоп «Бородинский»</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Барбершоп «Бородинский»</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<a href="" class="page-header__logo">
-			<img src="page-header__logo-image" src="" alt="Барбершоп «Бородинский»">
+			<img class="page-header__logo-image" src="" alt="Барбершоп «Бородинский»">
 		</a>
 		<nav class="main-nav">
-			<button class="main-nav_toogle" type="button">Открыть меню</button>
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item">
-					<a href="">Главная</a>
-				</li>
-				<li class="site-list__item">
-					<a href="">Наши работы</a>
-				</li>
-				<li class="site-list__item site-list__item--active">
-					<a href="">Записаться</a>
-				</li>
-				<li class="site-list__item">
-					<a href="">Контакты</a>
-				</li>
-			</ul>
+			<div class="main-nav__wrapper">
+				<button class="main-nav_toogle" type="button">Открыть меню</button>
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active">
+						<a href="">Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="">Наши работы</a>
+					</li>
+					<li class="site-list__item">
+						<a href="">Записаться</a>
+					</li>
+					<li class="site-list__item">
+						<a href="">Контакты</a>
+					</li>
+				</ul>
 
-			<ul class="main-nav__list user-list">
-				<li class="user-list__item">
-					<a href="" class="user-list__login">Войти</a>
-				</li>
-			</ul>
+				<ul class="main-nav__list user-list">
+					<li class="user-list__item">
+						<a href="" class="user-list__login">Войти</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -81,43 +86,45 @@
 		</section>
 
 		<section class="price-list">
-			<h2 class="price-list__title"></h2>
-			<table class="price-list__list">
-				<tr>
-					<td class="price-list__value price-list__value--mobile">1</td>
-					<td class="price-list__value">Классическая стрижка<br><span class="price-list__note">(с мытьём головы)</span></td>
-					<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
-					<td class="price-list__value">1 500 руб.</td>
-				</tr>
-				<tr>
-					<td class="price-list__value price-list__value--mobile">2</td>
-					<td class="price-list__value">Современный вариант<br><span class="price-list__note">(с мытьём головы)</span></td>
-					<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
-					<td class="price-list__value">1 500 руб.</td>
-				</tr>
-				<tr>
-					<td class="price-list__value price-list__value--mobile">3</td>
-					<td class="price-list__value">Индивидуальный подход<br><span class="price-list__note">(с мытьём головы)</span></td>
-					<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
-					<td class="price-list__value">2 000 руб.</td>
-				</tr>
-				<tr>
-					<td class="price-list__value price-list__value--mobile">4</td>
-					<td class="price-list__value">Бритьё головы<br><span class="price-list__note">(без мытья)</span></td>
-					<td class="price-list__value price-list__value--mobile">Без мытья</td>
-					<td class="price-list__value">500 руб.</td>
-				</tr>
-				<tr>
-					<td class="price-list__value price-list__value--mobile">5</td>
-					<td class="price-list__value">Бритьё головы<br><span class="price-list__note">(с мытьём головы)</span></td>
-					<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
-					<td class="price-list__value">1 000 руб.</td>
-				</tr>
-			</table>
+			<h2 class="price-list__title">Прейскурант</h2>
+			<div class="price-list__wrapper">
+				<table class="price-list__list">
+					<tr>
+						<td class="price-list__value price-list__value--mobile">1</td>
+						<td class="price-list__value">Классическая стрижка<br><span class="price-list__note">(с мытьём головы)</span></td>
+						<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
+						<td class="price-list__value">1 500 руб.</td>
+					</tr>
+					<tr>
+						<td class="price-list__value price-list__value--mobile">2</td>
+						<td class="price-list__value">Современный вариант<br><span class="price-list__note">(с мытьём головы)</span></td>
+						<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
+						<td class="price-list__value">1 500 руб.</td>
+					</tr>
+					<tr>
+						<td class="price-list__value price-list__value--mobile">3</td>
+						<td class="price-list__value">Индивидуальный подход<br><span class="price-list__note">(с мытьём головы)</span></td>
+						<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
+						<td class="price-list__value">2 000 руб.</td>
+					</tr>
+					<tr>
+						<td class="price-list__value price-list__value--mobile">4</td>
+						<td class="price-list__value">Бритьё головы<br><span class="price-list__note">(без мытья)</span></td>
+						<td class="price-list__value price-list__value--mobile">Без мытья</td>
+						<td class="price-list__value">500 руб.</td>
+					</tr>
+					<tr>
+						<td class="price-list__value price-list__value--mobile">5</td>
+						<td class="price-list__value">Бритьё головы<br><span class="price-list__note">(с мытьём головы)</span></td>
+						<td class="price-list__value price-list__value--mobile">С мытьём головы</td>
+						<td class="price-list__value">1 000 руб.</td>
+					</tr>
+				</table>
 
-			<div class="price-list__work-time">
-				<img src="" class="price-list__clock">
-				<b class="price-list__discount">C 10:00 до 14:00 скидка 20%</b>
+				<div class="price-list__work-time">
+					<img src="" class="price-list__clock">
+					<b class="price-list__discount">C 10:00 до 14:00 скидка 20%</b>
+				</div>
 			</div>
 		</section>
 	</main>

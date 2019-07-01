@@ -3,34 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Барбершоп «Бородинский»</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Барбершоп «Бородинский»</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<a href="" class="page-header__logo">
-			<img src="page-header__logo-image" src="" alt="Барбершоп «Бородинский»">
+			<img class="page-header__logo-image" src="" alt="Барбершоп «Бородинский»">
 		</a>
 		<nav class="main-nav">
-			<button class="main-nav_toogle" type="button">Открыть меню</button>
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item">
-					<a href="">Главная</a>
-				</li>
-				<li class="site-list__item">
-					<a href="">Наши работы</a>
-				</li>
-				<li class="site-list__item site-list__item--active">
-					<a href="">Записаться</a>
-				</li>
-				<li class="site-list__item">
-					<a href="">Контакты</a>
-				</li>
-			</ul>
+			<div class="main-nav__wrapper">
+				<button class="main-nav_toogle" type="button">Открыть меню</button>
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active">
+						<a href="">Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="">Наши работы</a>
+					</li>
+					<li class="site-list__item">
+						<a href="">Записаться</a>
+					</li>
+					<li class="site-list__item">
+						<a href="">Контакты</a>
+					</li>
+				</ul>
 
-			<ul class="main-nav__list user-list">
-				<li class="user-list__item">
-					<a href="" class="user-list__login">Войти</a>
-				</li>
-			</ul>
+				<ul class="main-nav__list user-list">
+					<li class="user-list__item">
+						<a href="" class="user-list__login">Войти</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -39,17 +44,20 @@
 			<h1 class="entry__headline">Запись на стрижку</h1>
 			<a href="" class="entry__link button">На главную</a>
 			<form class="entry__form">
-				<input placeholder="Фамилия" type="text" name="surname" required>
+				<div class="entry__wrapper entry__wrapper--form">
+					<input placeholder="Фамилия" type="text" name="surname" required>
 
-				<input placeholder="Имя" type="text" name="name" required>
+					<input placeholder="Имя" type="text" name="name" required>
 
-				<input placeholder="Отчество" type="text" name="middle name">
-				<br>
-				<input placeholder="Контактный телефон" type="tel" name="tele">
-				<br>
-				<input placeholder="Контактный e-mail" type="email" name="e-mail">
-				<br>
-				<textarea placeholder="Доп. информация для мастера"></textarea>
+					<input placeholder="Отчество" type="text" name="middlename">
+				</div>
+
+				<div class="entry__wrapper entry__wrapper--form">
+					<input placeholder="Контактный телефон" type="tel" name="tele">
+					<input placeholder="Контактный e-mail" type="email" name="e-mail">
+				</div>
+					<textarea placeholder="Доп. информация для мастера"></textarea>
+				
 			
 
 				<h2 class="entry__title">Выберите модель бороды:</h2>
@@ -59,13 +67,14 @@
 					</li>
 
 					<li class="entry__item entry__item--lumberjack">
-						<input type="radio" name="lumberjack">Лесоруб
+						<input type="radio" name="lumberjack">
+						Лесоруб					
 					</li>
 
 					<li class="entry__item entry__item--polar-explorer">
 						<input type="radio" name="polar-explorer">Полярник
 					</li>
-
+					
 					<li class="entry__item entry__item--boyarin">
 						<input type="radio" name="boyarin">Боярин
 					</li>
@@ -77,7 +86,7 @@
 
 				<h2 class="entry__title">Дополнительные услуги:</h2>
 				<ul class="entry__list entry__list--services">
-					<li class="entry__item entry__item--admiral">
+					<li class="entry__item">
 						<input type="checkbox" checked>Подкрасить бороду
 					</li>
 

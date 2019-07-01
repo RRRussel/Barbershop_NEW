@@ -1,0 +1,29 @@
+.price-list{
+	width: 280px;
+	margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+	.price-list{
+		width: 640px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.price-list{
+		width: 960px;
+	}
+
+	.price-list__wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.price-list__list{
+		width: 630px;
+	}
+
+	.price-list__work-time{
+		width: 270px;
+	}
+}
