@@ -6,24 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Барбершоп «Бородинский»</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="page-header">
 		<a href="" class="page-header__logo">
-			<img class="page-header__logo-image" src="" alt="Барбершоп «Бородинский»">
+			<img class="page-header__logo-image" src="img/logotype-mobile.png" alt="Барбершоп «Бородинский»" width="225" height="85">
 		</a>
-		<nav class="main-nav">
+		<nav class="main-nav main-nav--closed">
 			<div class="main-nav__wrapper">
-				<button class="main-nav_toogle" type="button">Открыть меню</button>
+				<button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="works.html">Наши работы</a>
+					</li>
 					<li class="site-list__item site-list__item--active">
-						<a href="">Главная</a>
-					</li>
-					<li class="site-list__item">
-						<a href="">Наши работы</a>
-					</li>
-					<li class="site-list__item">
-						<a href="">Записаться</a>
+						<a>Записаться</a>
 					</li>
 					<li class="site-list__item">
 						<a href="">Контакты</a>
@@ -32,7 +33,14 @@
 
 				<ul class="main-nav__list user-list">
 					<li class="user-list__item">
-						<a href="" class="user-list__login">Войти</a>
+						<a href="" class="user-list__login">
+						<svg class="user-list__login-icon"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 width="16px" height="16px">
+						<image x="0px" y="0px" width="16px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBwEXOgUaMuf6AAAAnUlEQVQoz2WQsQoCQQxEX5Zw551gL+g/CFpZWIjfvq2t4DcIForC7bFWeklMN5PJDBOpmBFOtMgPF4rix65BUaleMCfxpSp7ZtHh6VCB5IiOpcMpCl7s2HhLRRCTOrBGOFvBEaUaDCuYJErP/ywmVyW75lsaHuTJU7m524Y7mRGXaWteufg0X/Md1jUKwt+RGCEc6MxX2iiA3jEjwwedgyK01yGkuQAAAABJRU5ErkJggg==" />
+						</svg>
+						Войти</a>
 					</li>
 				</ul>
 			</div>
@@ -154,6 +162,7 @@
 				<a href="" class="copyright__link button">Абдрашитов Руслан</a>
 			</div>
 		</div>
-	</footer>	
+	</footer>
+	<script type="text/javascript" src="js/toogler.js"></script>	
 </body>
 </html>
